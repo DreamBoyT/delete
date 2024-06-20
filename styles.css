@@ -1,0 +1,65 @@
+/* Base styles for the card */
+.card {
+  background-color: #ffffff; /* Light theme background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #333; /* Text color for light theme */
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.theme-button {
+  background-color: #000000; /* Button background color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  margin: 0 5px;
+}
+
+.theme-button:hover {
+  background-color: #444444; /* Darker background color on hover */
+}
+
+/* Dark theme */
+.dark-theme {
+  background-color: #333333; /* Dark theme card background color */
+  color: #ffffff; /* Dark theme text color */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .theme-button {
+  background-color: #ffffff; /* Dark theme button background color */
+  color: #000000; /* Dark theme button text color */
+}
+
+.dark-theme .theme-button:hover {
+  background-color: #cccccc; /* Lighten button color on hover */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .button-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .theme-button {
+    margin: 5px 0;
+    width: 80%;
+  }
+}
